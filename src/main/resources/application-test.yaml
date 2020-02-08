@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:MySQL://localhost:3306/db_wwx_crm_test?useUnicode=true&characterEncoding=utf8
+    username: wwx
+    password: wwx
+    hikari:
+      connection-test-query: select 1
+      connection-timeout: 30000
+      maximum-pool-size: 15
+      max-lifetime: 1800000
+      minimum-idle: 5
+      pool-name: DatebookHikariCP
